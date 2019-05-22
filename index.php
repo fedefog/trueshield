@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="buttons">
-                        <a href="step1.php" class="btn">Let's do this</a>
+                        <a href="step-1a.php" class="btn">Let's do this</a>
                         <a href="#" class="lnk">I already have a quote</a>
                     </div>
                 </div>

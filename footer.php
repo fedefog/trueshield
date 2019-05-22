@@ -1,6 +1,4 @@
 
-
-
     <footer>
        <a href="index.php" class="back-btn"><img src="img/arrow-left.png" width="26"></a>
         <ul class="contact">
@@ -8,7 +6,7 @@
             <li><a href="#"></a><img src="img/phone.png" width="18"></li>
             <li><a href="#"></a><img src="img/share.png" width="18"></li>
         </ul>
-        <a href="#" class="next-btn"><img src="img/arrow-right.png" width="26"></a>
+        <a href="<?php echo $next_page; ?>.php" class="next-btn"><img src="img/arrow-right.png" width="26"></a>
     </footer>
     <!-- Jquery js -->
 <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>

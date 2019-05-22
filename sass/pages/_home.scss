@@ -1,0 +1,51 @@
+.page-home{
+    text-align: center;
+    
+    header{
+        .steps{
+            display: none;
+        }
+    }
+    
+    .content{
+        height: 100vh;
+        max-height: calc(100vh - 105px);
+    }
+    
+    .buttons{
+        height: 30%;
+    }
+    
+    .description{
+        height: 70%;
+        display: flex;
+        align-items: center;
+        
+        p{
+            color: $white;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .btn{
+        background: $pink;
+        color: $white;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        border-radius: 2px;
+        padding: 16px 62px;
+        margin-bottom: 30px;
+        letter-spacing: 1.5px;
+        font-size: 14px;
+    }
+    
+    .lnk{
+        font-size: 16px;
+        color: $white;
+    }
+    
+    footer{
+        display: none;
+    }
+}

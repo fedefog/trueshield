@@ -1,0 +1,33 @@
+footer{
+    position: absolute;
+    width: 100%;
+    background: #DDE8ED;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    
+    .back-btn{
+        position: absolute;
+        left: 10px;
+    }
+    
+    .next-btn{
+        position: absolute;
+        top: -34px;
+        right: 10px;
+        background: #A3A3A3;
+        border-radius: 50px;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        padding-top: 8px;
+        border: 7px solid $white;
+    }
+    
+    .contact{
+        li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+}

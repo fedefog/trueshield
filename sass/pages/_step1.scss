@@ -4,6 +4,31 @@
             display: none;
         }
     }
+
+    .field-completed {
+        background: $white;
+        color: $grey;
+        width: 100%;
+        margin-bottom: 2px;
+
+        span {
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 13px;
+            color: $black;
+            margin-bottom: 15px;
+        }
+
+        a {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            font-size: 12px;
+        }
+
+    }
     
     .card{
         transition: all 0.5s;
@@ -33,4 +58,11 @@
             }
         }
     }
+
+    .mini-card {
+        background: $white;
+        width: 100%;
+        color: $green;
+    }
+
 }

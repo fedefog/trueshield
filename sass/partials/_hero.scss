@@ -1,0 +1,45 @@
+.description {
+    p {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    &.total-cost {
+        p {
+            font-size: 20px;
+            padding:0px;
+            margin:0px;
+        }
+
+        .quote {
+            margin-top: 10px;
+
+            em {
+                text-align: center;
+            }
+        }
+    }
+
+    .quote {
+        line-height: 120%;
+        text-align: right;
+        margin-top: 115px;
+
+        span {
+            position: relative;
+            top: -30px;
+            left: 5px;
+        }
+
+        .number {
+            display: inline-block;
+            font-size: 65px;
+
+            em {
+                display: block;
+                font-size: 16px;
+                font-style: initial;
+            }
+        }
+    }
+}

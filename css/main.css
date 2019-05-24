@@ -56,13 +56,52 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 /* line 1, ../sass/partials/_card.scss */
 .card { width: 100%; border-radius: 0; text-align: center; box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.46); height: 64vh; bottom: 0; position: absolute; padding: 30px; }
 /* line 11, ../sass/partials/_card.scss */
-.card label { color: #00968F; padding-bottom: 20px; position: relative !important; font-size: 25px !important; }
-/* line 18, ../sass/partials/_card.scss */
-.card input { text-align: center; border: 0; border-bottom: 2px solid #00968F; width: 100%; }
+.card.slide { padding: 0; height: 62vh; }
+/* line 15, ../sass/partials/_card.scss */
+.card.slide .question-wrapper { background: #00968F; padding: 20px 30px; text-align: left; }
+/* line 20, ../sass/partials/_card.scss */
+.card.slide .question-wrapper .question { font-size: 18px; font-weight: 700; }
 /* line 24, ../sass/partials/_card.scss */
+.card.slide .question-wrapper .question span { font-size: 12px; display: block; font-weight: 400; }
+/* line 32, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper { padding: 20px 30px; color: #000000; text-align: left; }
+/* line 37, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper .title { font-size: 16px; font-weight: 700; }
+/* line 41, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper .title span { display: block; color: #00968F; font-size: 12px; font-weight: 300; }
+/* line 49, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper .subtitle { font-size: 14px; font-weight: 700; }
+/* line 57, ../sass/partials/_card.scss */
+.card label { color: #00968F; padding-bottom: 20px; position: relative !important; font-size: 25px !important; }
+/* line 64, ../sass/partials/_card.scss */
+.card input { text-align: center; border: 0; border-bottom: 2px solid #00968F; width: 100%; }
+/* line 70, ../sass/partials/_card.scss */
 .card input:focus, .card input:active { outline: none; }
-/* line 29, ../sass/partials/_card.scss */
+/* line 75, ../sass/partials/_card.scss */
 .card .input-container { padding: 0; }
+/* line 79, ../sass/partials/_card.scss */
+.card .radio { font-size: 0px; margin-top: 15px; }
+/* line 83, ../sass/partials/_card.scss */
+.card .radio label { border: 1px solid #6d6d6d; width: 50%; padding: 10px 30px; font-size: 20px !important; }
+/* line 89, ../sass/partials/_card.scss */
+.card .radio label .bmd-radio { position: relative; padding: 0px 0px; margin-right: 2px; top: 8px; }
+
+/* line 2, ../sass/partials/_hero.scss */
+.description p { font-size: 16px; padding-bottom: 20px; }
+/* line 8, ../sass/partials/_hero.scss */
+.description.total-cost p { font-size: 20px; padding: 0px; margin: 0px; }
+/* line 14, ../sass/partials/_hero.scss */
+.description.total-cost .quote { margin-top: 10px; }
+/* line 17, ../sass/partials/_hero.scss */
+.description.total-cost .quote em { text-align: center; }
+/* line 23, ../sass/partials/_hero.scss */
+.description .quote { line-height: 120%; text-align: right; margin-top: 115px; }
+/* line 28, ../sass/partials/_hero.scss */
+.description .quote span { position: relative; top: -30px; left: 5px; }
+/* line 34, ../sass/partials/_hero.scss */
+.description .quote .number { display: inline-block; font-size: 65px; }
+/* line 38, ../sass/partials/_hero.scss */
+.description .quote .number em { display: block; font-size: 16px; font-style: initial; }
 
 /* line 1, ../sass/pages/_home.scss */
 .page-home { text-align: center; }
@@ -105,3 +144,30 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 .page-step1 .card.active p { opacity: 1; visibility: visible; transition: all 0.5s; }
 /* line 62, ../sass/pages/_step1.scss */
 .page-step1 .mini-card { background: #FFFFFF; width: 100%; color: #00968F; }
+
+/* line 3, ../sass/pages/_step2.scss */
+.page-step2 header .logo { display: none; }
+/* line 9, ../sass/pages/_step2.scss */
+.page-step2 .desctiption .quote { margin-top: 115px; }
+/* line 13, ../sass/pages/_step2.scss */
+.page-step2 table { border-top: 2px solid; }
+/* line 17, ../sass/pages/_step2.scss */
+.page-step2 .table, .page-step2 .table th, .page-step2 .table td { color: #FFFFFF; font-size: 13px; font-weight: 400; }
+/* line 22, ../sass/pages/_step2.scss */
+.page-step2 .table td, .page-step2 .table th { padding: 10px 15px; }
+/* line 26, ../sass/pages/_step2.scss */
+.page-step2 .table th { border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+/* line 29, ../sass/pages/_step2.scss */
+.page-step2 .table td { border-top: none !important; }
+/* line 33, ../sass/pages/_step2.scss */
+.page-step2 .card { transition: all 0.5s; }
+/* line 35, ../sass/pages/_step2.scss */
+.page-step2 .card p { color: #6d6d6d; font-size: 14px; padding: 10px 0; margin: 0px; letter-spacing: -0.5px; }
+/* line 43, ../sass/pages/_step2.scss */
+.page-step2 .card .input-container { position: absolute; top: calc(50% - 101px); width: calc(100% - 60px); }
+/* line 49, ../sass/pages/_step2.scss */
+.page-step2 .card.active { height: 87vh; transition: all 0.5s; }
+/* line 53, ../sass/pages/_step2.scss */
+.page-step2 .card.active p { opacity: 1; visibility: visible; transition: all 0.5s; }
+/* line 61, ../sass/pages/_step2.scss */
+.page-step2 .mini-card { background: #FFFFFF; width: 100%; color: #00968F; }

@@ -1,6 +1,6 @@
 
 <?php $page_name = "step1" ?>
-<?php $next_page = "step-1f" ?>
+<?php $next_page = "step-2a" ?>
 <?php include('header.php'); ?>
 
 <section>
@@ -8,7 +8,11 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="description">
-                    <p>hi Jim, few more questions..</p>
+                    <p class="left">Jim, based on the information<br> you have<br> provided us so far, this is<br> the estimated monthly<br> cost for your CGL<br> coverage:</p>
+                    <div class="quote right">
+                        <span>$</span>
+                        <div class="number">53<em>/month</em></div>
+                    </div>
                 </div>
             </div>
         </div>

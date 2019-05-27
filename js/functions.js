@@ -9,8 +9,7 @@ $(document).ready(function() {
         } else{
             $('.slide').addClass('show');
         }
-        
-        console.log('holas');
+
     });
     
     

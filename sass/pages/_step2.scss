@@ -3,6 +3,9 @@
         .logo{
             display: none;
         }
+        .steps li:nth-of-type(2) {
+            background: #BFD730;
+        }
     }
 
     .desctiption {
@@ -12,12 +15,26 @@
     }
     table {
         border-top: 2px solid;
+        
+        .edit{
+            width: 15px;
+            height: 15px;
+            background-image: url(img/icon-edit2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+            margin-top: 10px;
+        }
     }
 
     .table, .table th, .table td {
         color: $white;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: $regular;
+        
+        &:nth-of-type(2){
+            font-size: 20px;
+        }
     }
     .table td, .table th {
         padding: 10px 15px;

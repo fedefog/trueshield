@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="description">
-                    <p>hi Jim, few more questions..</p>
+                    <p>Hi Jim, few more<br> questions..</p>
                 </div>
             </div>
         </div>
@@ -38,11 +38,11 @@
     </div>
 </section>
 
-<div class="card">
+<div class="card d">
     <p>Explanation why we’re asking your name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula commodo nulla, non elementum eros porttitor ut.</p>
     
     <div class="input-container form-group">
-        <label for="company" class="bmd-label-floating">Cpmpany name?</label>
+        <label for="company" class="bmd-label-floating">Company name?</label>
         <input type="text" id="company" name="company" class="input-click form-control">
     </div>
 </div>

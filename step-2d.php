@@ -29,17 +29,17 @@
                 <tr>
                   <td><strong>Business Contents($25k - 100k)</strong></td>
                   <td>$5</td>
-                  <td>e</td>
+                  <td><a href="#" class="edit"></a></td>
                 </tr>
                 <tr>
                   <td><strong>Data & Privacy(Yes)</strong></td>
                   <td>$10</td>
-                  <td>e</td>
+                  <td><a href="#" class="edit"></a></td>
                 </tr>
                 <tr>
                   <td><strong>Tools and equipment($50k - $100k)</strong></td>
                   <td>$10</td>
-                  <td>e</td>
+                  <td><a href="#" class="edit"></a></td>
                 </tr>
               </tbody>
             </table>
@@ -72,7 +72,7 @@
         </label>
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2" checked>
-          Yes
+          No
         </label>
       </div>
     </div>

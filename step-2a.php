@@ -7,8 +7,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="description">
-                    <p class="left">Jim, based on the information<br> you have<br> provided us so far, this is<br> the estimated monthly<br> cost for your CGL<br> coverage:</p>
+                <div class="description total-cost">
+                    <p class="left">Jim, based on the information you have provided us so far, this is the estimated monthly cost for your CGL coverage:</p>
                     <div class="quote right">
                         <span>$</span>
                         <div class="number">53<em>/month</em></div>
@@ -36,7 +36,14 @@
         <p>If you need specialized tools and equipment do your job, you should protect them wherever your work may take you. </p>
 
         <div class="subtitle">What’s the value of your tools and equipment?</div>
-        <br>slider
+        <div class="form-group bmd-form-group">
+            <div class="range">
+                <div id="pmd-slider-value-input" class="pmd-range-slider"></div>
+                    <div class="form-group pmd-textfield pmd-textfield-floating-label-completed">
+                    <input type="text" class="form-control" id="value-input"><span class="pmd-textfield-focused"></span>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

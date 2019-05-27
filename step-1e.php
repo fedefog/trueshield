@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="description">
-                    <p>hi Jim, few more questions..</p>
+                    <p>Hi Jim, few more<br> questions..</p>
                 </div>
             </div>
         </div>
@@ -43,9 +43,14 @@
             </div>
             <div class="mini-card">
                 <div class="col-md-12">
-                    <div class="form-group bmd-form-group text-center">
-                        <label for="revenue" class="bmd-label-static">I expect my revenue for the next 12 months to be:</label>
-                        <br>slider
+                    <div class="form-group bmd-form-group">
+                        <p>What’s your projected revenue over the coming 12 months?</p>
+                        <div class="range">
+                            <div id="pmd-slider-value-input" class="pmd-range-slider"></div>
+                            <div class="form-group pmd-textfield pmd-textfield-floating-label-completed">
+                            <input type="text" class="form-control" id="value-input"><span class="pmd-textfield-focused"></span>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>

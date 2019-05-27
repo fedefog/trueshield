@@ -7,8 +7,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="description">
-                    <p class="left">Jim, based on the information<br> you have<br> provided us so far, this is<br> the estimated monthly<br> cost for your CGL<br> coverage:</p>
+                <div class="description total-cost">
+                    <p class="left">Jim, based on the information you have provided us so far, this is the estimated monthly cost for your CGL coverage:</p>
                     <div class="quote right">
                         <span>$</span>
                         <div class="number">53<em>/month</em></div>
@@ -45,12 +45,11 @@
                         <a href="#">edit</a>
                 </div>
             </div>
-            <div class="mini-card">
+            <div class="field-completed">
                 <div class="col-md-12">
-                    <div class="form-group bmd-form-group text-center">
-                        <label for="revenue" class="bmd-label-static">I expect my revenue for the next 12 months to be:</label>
-                        <br>slider
-                    </div>
+                        <span>Projected revenue</span>
+                        <p>$575k</p>
+                        <a href="#">edit</a>
                 </div>
             </div>
         </div>

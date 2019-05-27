@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="description">
-                    <p>hi Jim, few more questions..</p>
+                    <p>Hi Jim, welcome to coverage coach! few more questions…</p>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
     </div>
 </section>
 
-<div class="card">
+<div class="card b">
     <p>Explanation why we’re asking your name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula commodo nulla, non elementum eros porttitor ut.</p>
     
     <div class="input-container form-group">

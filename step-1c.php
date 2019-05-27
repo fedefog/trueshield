@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="description">
-                    <p>hi Jim, few more questions..</p>
+                    <p>Hi Jim, few more<br> questions..</p>
                 </div>
             </div>
         </div>
@@ -31,12 +31,12 @@
     </div>
 </section>
 
-<div class="card">
+<div class="card c">
     <p>Explanation why we’re asking your name. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula commodo nulla, non elementum eros porttitor ut.</p>
     
     <div class="input-container form-group">
         <label for="ps" class="bmd-label-floating">Wherte's your business located?</label>
-        <span>(Please type your postal code or click the icon)</span>
+        <!--<span>(Please type your postal code or click the icon)</span>-->
         <input type="number" id="ps" name="ps" class="input-click form-control">
     </div>
 </div>

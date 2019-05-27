@@ -1,0 +1,70 @@
+.range{
+    .pmd-range-slider{
+        width: 75%;
+        display: inline-block;
+        height: 8px;
+        
+        &.noUi-connect{
+            background: $green;
+        }
+        
+        .noUi-handle{
+            width: 40px;
+            height: 40px;
+            left: -15px;
+            top: -17px;
+    
+            
+            &:before{
+                background: $green;
+                border: 3px solid #ffffff;
+                box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.28);
+            }
+        }
+        
+        .noUi-tooltip{
+            background: $green;
+            
+            &:before{
+                background: $green !important;
+            }
+        }
+    }
+    
+    .pmd-textfield{
+        display: inline-block;
+        width: 19%;
+        margin-left: 3%;
+        margin-bottom: 0;
+        position: relative;
+        border: 0;
+        
+        &:before{
+            content: "$";
+            position: absolute;
+            font-size: 25px;
+            font-weight: $medium;
+            color: #707070;
+            top: -4px;
+            left: -4px;
+        }
+        
+        &:after{
+            content: "k";
+            position: absolute;
+            font-size: 25px;
+            font-weight: $medium;
+            color: #707070;
+            top: -4px;
+            right: -5px;
+        }
+        
+        input{
+            text-align: center;
+            font-size: 25px;
+            font-weight: $medium;
+            color: #707070;
+            border: 0;
+        }
+    }
+}

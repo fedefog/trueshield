@@ -29,12 +29,12 @@
                  <tr>
                   <td><strong>Data & Privacy(Yes)</strong></td>
                   <td>$10</td>
-                  <td>e</td>
+                  <td><a href="#" class="edit"></a></td>
                 </tr>
                 <tr>
                   <td><strong>Tools and equipment($50k - $100k)</strong></td>
                   <td>$10</td>
-                  <td>e</td>
+                  <td><a href="#" class="edit"></a></td>
                 </tr>
               </tbody>
             </table>
@@ -59,7 +59,12 @@
         <p>Computers, photocopiers, furniture and other contents in your place of business are sitting ducks for theft and damage.</p>
 
         <div class="subtitle">What's the value of your stored business content?</div>
-        <br>slider
+        <div class="range">
+            <div id="pmd-slider-value-input" class="pmd-range-slider"></div>
+                <div class="form-group pmd-textfield pmd-textfield-floating-label-completed">
+                <input type="text" class="form-control" id="value-input"><span class="pmd-textfield-focused"></span>
+            </div>
+        </div>
     </div>
 
 </div>

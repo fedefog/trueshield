@@ -30,8 +30,8 @@
         padding:0;
         height: 58vh;
         position: fixed;
-        top: calc(100vh - 160px);
-        transition: top 0.5s;
+        transition: all 0.5s;
+        bottom: calc(-58vh + 160px);
 
         .bmd-form-group{
            padding: 0; 
@@ -117,8 +117,9 @@
         }
         
         &.show{
-            position: relative;
-            top: 0;
+            position: absolute;
+            bottom: 0;
+            top: initial;
             transition: all 0.5s;
             
             .question-wrapper {

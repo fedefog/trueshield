@@ -89,7 +89,7 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 /* line 24, ../sass/partials/_card.scss */
 .card.active { height: 87vh; transition: all 0.5s; }
 /* line 29, ../sass/partials/_card.scss */
-.card.slide { padding: 0; height: 58vh; position: fixed; top: calc(100vh - 160px); transition: top 0.5s; }
+.card.slide { padding: 0; height: 58vh; position: fixed; transition: all 0.5s; bottom: calc(-58vh + 160px); }
 /* line 36, ../sass/partials/_card.scss */
 .card.slide .bmd-form-group { padding: 0; }
 /* line 40, ../sass/partials/_card.scss */
@@ -119,22 +119,22 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 /* line 113, ../sass/partials/_card.scss */
 .card.slide .answer-wrapper .radio label { font-size: 15px !important; color: #000000; }
 /* line 119, ../sass/partials/_card.scss */
-.card.slide.show { position: relative; top: 0; transition: all 0.5s; }
-/* line 126, ../sass/partials/_card.scss */
+.card.slide.show { position: absolute; bottom: 0; top: initial; transition: all 0.5s; }
+/* line 127, ../sass/partials/_card.scss */
 .card.slide.show .question-wrapper:after { transform: rotate(0); transition: top 0.5s; }
-/* line 135, ../sass/partials/_card.scss */
+/* line 136, ../sass/partials/_card.scss */
 .card label { padding-bottom: 20px; position: relative !important; font-size: 25px !important; }
-/* line 141, ../sass/partials/_card.scss */
+/* line 142, ../sass/partials/_card.scss */
 .card input { text-align: center; border: 0; width: 100%; }
-/* line 146, ../sass/partials/_card.scss */
+/* line 147, ../sass/partials/_card.scss */
 .card input:focus, .card input:active { outline: none; }
-/* line 151, ../sass/partials/_card.scss */
+/* line 152, ../sass/partials/_card.scss */
 .card .input-container { padding: 0; }
-/* line 155, ../sass/partials/_card.scss */
+/* line 156, ../sass/partials/_card.scss */
 .card .radio { font-size: 0px; margin-top: 15px; }
-/* line 159, ../sass/partials/_card.scss */
+/* line 160, ../sass/partials/_card.scss */
 .card .radio label { border: 1px solid #6d6d6d; width: 50%; padding: 10px 30px; font-size: 20px !important; }
-/* line 165, ../sass/partials/_card.scss */
+/* line 166, ../sass/partials/_card.scss */
 .card .radio label .bmd-radio { position: relative; padding: 0px 0px; margin-right: 2px; top: 8px; }
 
 /* line 2, ../sass/partials/_hero.scss */
@@ -230,7 +230,5 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 .page-step2 .card.active { height: 87vh; transition: all 0.5s; }
 /* line 70, ../sass/pages/_step2.scss */
 .page-step2 .card.active p { opacity: 1; visibility: visible; transition: all 0.5s; }
-/* line 77, ../sass/pages/_step2.scss */
-.page-step2 .card.slide { transition-delay: -0.15s; }
-/* line 82, ../sass/pages/_step2.scss */
+/* line 79, ../sass/pages/_step2.scss */
 .page-step2 .mini-card { background: #FFFFFF; width: 100%; color: #00968F; }

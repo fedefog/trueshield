@@ -1,5 +1,6 @@
 
 <?php $page_name = "step2" ?>
+<?php $prev_page = "step-2c" ?>
 <?php $next_page = "step-2d" ?>
 <?php include('header.php'); ?>
 
@@ -47,7 +48,7 @@
     </div>
 </section>
 
-<div class="card slide">
+<div class="card slide show">
     <div class="question-wrapper">
         <div class="question">
             Jim, Did you know?

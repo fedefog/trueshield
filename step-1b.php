@@ -1,5 +1,6 @@
 
 <?php $page_name = "step1" ?>
+<?php $prev_page = "step-1a" ?>
 <?php $next_page = "step-1c" ?>
 <?php include('header.php'); ?>
 

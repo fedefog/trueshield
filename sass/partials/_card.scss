@@ -29,7 +29,10 @@
     &.slide {
         padding:0;
         height: 58vh;
-        
+        position: fixed;
+        top: calc(100vh - 160px);
+        transition: top 0.5s;
+
         .bmd-form-group{
            padding: 0; 
         }
@@ -64,6 +67,8 @@
                 background-position: center;
                 top: -26px;
                 right: 44%;
+                transform: rotate(180deg);
+                transition: all 0.5s;
             }
         }
 
@@ -109,6 +114,20 @@
                 font-size: 15px !important;
                 color: #000000;
              }
+        }
+        
+        &.show{
+            position: relative;
+            top: 0;
+            transition: all 0.5s;
+            
+            .question-wrapper {
+
+                &:after{
+                    transform: rotate(0);
+                    transition: top 0.5s;
+                }
+            }
         }
 
     }

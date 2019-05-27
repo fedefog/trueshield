@@ -3,6 +3,16 @@ $(document).ready(function() {
         $('.card').addClass('active');
     });
     
+    $('.question-wrapper').click(function(){
+        if ($('.slide').hasClass('show')){
+            $('.slide').removeClass('show');
+        } else{
+            $('.slide').addClass('show');
+        }
+        
+        console.log('holas');
+    });
+    
     
 	// single hendelr input value
 	var pmdSliderValueInput = document.getElementById('pmd-slider-value-input');

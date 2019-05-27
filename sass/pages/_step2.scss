@@ -73,6 +73,10 @@
                 transition: all 0.5s;
             }
         }
+        
+        &.slide{
+           transition-delay: -0.15s;
+        }
     }
 
     .mini-card {

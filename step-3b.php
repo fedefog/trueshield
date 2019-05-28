@@ -1,7 +1,7 @@
 
-<?php $page_name = "step2" ?>
-<?php $prev_page = "step-2c" ?>
-<?php $next_page = "step-3a" ?>
+<?php $page_name = "step3" ?>
+<?php $prev_page = "step-3a" ?>
+<?php $next_page = "step-3c" ?>
 <?php include('header.php'); ?>
 
 <section>
@@ -12,7 +12,7 @@
                     <p class=" left">Total cost<br> per month:</p>
                     <div class="quote right">
                         <span>$</span>
-                        <div class="number">53<em>+tax</em></div>
+                        <div class="number">73<em>+tax</em></div>
                     </div>
                 </div>
             </div>
@@ -27,19 +27,19 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><strong>Business Contents($25k - 100k)</strong></td>
-                  <td>$5</td>
-                  <td><a href="#" class="edit"></a></td>
-                </tr>
-                <tr>
+                 <tr>
                   <td><strong>Data & Privacy(Yes)</strong></td>
                   <td>$10</td>
                   <td><a href="#" class="edit"></a></td>
                 </tr>
                 <tr>
-                  <td><strong>Tools and equipment($50k - $100k)</strong></td>
-                  <td>$10</td>
+                  <td><strong>Business Contents ($25k - 100k)</strong></td>
+                  <td>$5</td>
+                  <td><a href="#" class="edit"></a></td>
+                </tr>
+                  <tr>
+                  <td><strong>Installation for customers (No)</strong></td>
+                  <td>$0</td>
                   <td><a href="#" class="edit"></a></td>
                 </tr>
               </tbody>
@@ -48,25 +48,22 @@
     </div>
 </section>
 
-<div class="card slide show">
+<div class="card slide small show">
     <div class="question-wrapper">
         <div class="question">
-            Jim, Did you know?
-            <span>People who share your profession also bought these coverages:</span>
+            Jim, let's make it official
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit non tortor lacinia venenatis.</span>
         </div>
     </div>
 
     <div class="answer-wrapper">
         <div class="title">
-            Instalattion for customers
-            <span>Starting at $3</span>
+            Property ownership
         </div>
         
-        <p>If you install products or fixtures for your customers, you should have the right coverage in case something gets damaged before or during the installation.<br>
-        Would you like to include data & Privacy coverage in your quote?</p>
+        <p>Do you own business premises that needs to be insured?</p>
 
-        <div class="subtitle">Would you like to include coverage for products you're installing for customers?</div>
-         <div class="radio">
+        <div class="radio">
         <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
           Yes

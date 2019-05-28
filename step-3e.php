@@ -1,7 +1,7 @@
 
-<?php $page_name = "step2" ?>
-<?php $prev_page = "step-2b" ?>
-<?php $next_page = "step-2d" ?>
+<?php $page_name = "step3" ?>
+<?php $prev_page = "step-3d" ?>
+<?php $next_page = "step-3f" ?>
 <?php include('header.php'); ?>
 
 <section>
@@ -33,8 +33,13 @@
                   <td><a href="#" class="edit"></a></td>
                 </tr>
                 <tr>
-                  <td><strong>Tools and equipment($50k - $100k)</strong></td>
-                  <td>$10</td>
+                  <td><strong>Business Contents ($25k - 100k)</strong></td>
+                  <td>$5</td>
+                  <td><a href="#" class="edit"></a></td>
+                </tr>
+                  <tr>
+                  <td><strong>Installation for customers (No)</strong></td>
+                  <td>$0</td>
                   <td><a href="#" class="edit"></a></td>
                 </tr>
               </tbody>
@@ -43,29 +48,22 @@
     </div>
 </section>
 
-<div class="card slide  show">
+<div class="card slide large show">
     <div class="question-wrapper">
         <div class="question">
-            Jim, Did you know?
-            <span>People who share your profession also bought these coverages:</span>
+            Jim, almost there!
+            <span>A few more details about your business to finalize your policy</span>
         </div>
     </div>
 
-    <div class="answer-wrapper">
-        <div class="title">
-            Business Contents
-            <span>Starting at $3</span>
-        </div>
-        
-        <p>Computers, photocopiers, furniture and other contents in your place of business are sitting ducks for theft and damage.</p>
-
-        <div class="subtitle">What's the value of your stored business content?</div>
-        <div class="range">
-            <div id="pmd-slider-value-input" class="pmd-range-slider"></div>
-                <div class="form-group pmd-textfield pmd-textfield-floating-label-completed">
-                <input type="text" class="form-control" id="value-input"><span class="pmd-textfield-focused"></span>
+    <div class="answer-wrapper ">
+        <div class="pick-date">
+            <div class="form-group">
+                <label for="datepicker" class="bmd-label-floating">Policy effective date</label>
+                <input id="datepicker" name="datepicker" class="form-control"/>
             </div>
         </div>
+
     </div>
 
 </div>

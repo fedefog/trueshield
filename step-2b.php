@@ -12,7 +12,7 @@
                     <p class=" left">Total cost<br> per month:</p>
                     <div class="quote right">
                         <span>$</span>
-                        <div class="number">53<em>+tax</em></div>
+                        <div class="number">63<em>+tax</em></div>
                     </div>
                 </div>
             </div>

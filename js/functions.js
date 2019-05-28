@@ -40,5 +40,4 @@ $(document).ready(function() {
 	valueInput.addEventListener('change', function(){
 		pmdSliderValueInput.noUiSlider.set([this.value]);
 	});
-
 });

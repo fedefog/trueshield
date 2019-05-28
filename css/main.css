@@ -91,50 +91,60 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 /* line 29, ../sass/partials/_card.scss */
 .card.slide { padding: 0; height: 58vh; position: fixed; transition: all 0.5s; bottom: calc(-58vh + 160px); }
 /* line 36, ../sass/partials/_card.scss */
+.card.slide.small { height: 45vh; bottom: calc(-45vh + 160px); }
+/* line 41, ../sass/partials/_card.scss */
+.card.slide.large { height: 75vh; bottom: calc(-75vh + 160px); }
+/* line 46, ../sass/partials/_card.scss */
 .card.slide .bmd-form-group { padding: 0; }
-/* line 40, ../sass/partials/_card.scss */
+/* line 50, ../sass/partials/_card.scss */
 .card.slide .question-wrapper { background: #00968F; padding: 15px 30px; text-align: left; position: relative; line-height: 1.3; }
-/* line 47, ../sass/partials/_card.scss */
+/* line 57, ../sass/partials/_card.scss */
 .card.slide .question-wrapper .question { font-size: 22px; font-weight: 700; }
-/* line 51, ../sass/partials/_card.scss */
+/* line 61, ../sass/partials/_card.scss */
 .card.slide .question-wrapper .question span { font-size: 16px; display: block; font-weight: 400; }
-/* line 58, ../sass/partials/_card.scss */
+/* line 68, ../sass/partials/_card.scss */
 .card.slide .question-wrapper:after { content: ""; position: absolute; width: 45px; height: 45px; border-radius: 50px; background: #00968F; background-image: url(img/icon-arrow.png); background-repeat: no-repeat; background-position: center; top: -26px; right: 44%; transform: rotate(180deg); transition: all 0.5s; }
-/* line 75, ../sass/partials/_card.scss */
+/* line 85, ../sass/partials/_card.scss */
 .card.slide .answer-wrapper { padding: 20px 30px; color: #000000; text-align: left; }
-/* line 80, ../sass/partials/_card.scss */
+/* line 90, ../sass/partials/_card.scss */
 .card.slide .answer-wrapper .title { font-size: 16px; font-weight: 700; }
-/* line 84, ../sass/partials/_card.scss */
+/* line 94, ../sass/partials/_card.scss */
 .card.slide .answer-wrapper .title span { display: block; color: #00968F; font-size: 15px; font-weight: 300; }
-/* line 92, ../sass/partials/_card.scss */
-.card.slide .answer-wrapper .subtitle { font-size: 14px; font-weight: 700; }
-/* line 97, ../sass/partials/_card.scss */
-.card.slide .answer-wrapper .radio label .bmd-radio:after, .card.slide .answer-wrapper label.radio-inline .bmd-radio:after { width: 20px; height: 20px; border: 2px solid rgba(0, 0, 0, 0.54); }
 /* line 102, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper .subtitle { font-size: 14px; font-weight: 700; }
+/* line 107, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper .radio label .bmd-radio:after, .card.slide .answer-wrapper label.radio-inline .bmd-radio:after { width: 20px; height: 20px; border: 2px solid rgba(0, 0, 0, 0.54); }
+/* line 112, ../sass/partials/_card.scss */
 .card.slide .answer-wrapper .radio label .bmd-radio:before, .card.slide .answer-wrapper label.radio-inline .bmd-radio:before { width: 20px; height: 20px; }
-/* line 106, ../sass/partials/_card.scss */
+/* line 116, ../sass/partials/_card.scss */
 .card.slide .answer-wrapper .radio label input[type=radio]:checked ~ .bmd-radio:after, .card.slide .answer-wrapper label.radio-inline input[type=radio]:checked ~ .bmd-radio:after { border-color: #009688; }
-/* line 109, ../sass/partials/_card.scss */
-.card.slide .answer-wrapper .bmd-radio { top: 4px; }
-/* line 113, ../sass/partials/_card.scss */
-.card.slide .answer-wrapper .radio label { font-size: 15px !important; color: #000000; }
 /* line 119, ../sass/partials/_card.scss */
-.card.slide.show { position: absolute; bottom: 0; top: initial; transition: all 0.5s; }
+.card.slide .answer-wrapper .bmd-radio { top: 4px; }
+/* line 123, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper .radio label { font-size: 15px !important; color: #000000; }
 /* line 127, ../sass/partials/_card.scss */
-.card.slide.show .question-wrapper:after { transform: rotate(0); transition: top 0.5s; }
-/* line 136, ../sass/partials/_card.scss */
-.card label { padding-bottom: 20px; position: relative !important; font-size: 25px !important; }
-/* line 142, ../sass/partials/_card.scss */
-.card input { text-align: center; border: 0; width: 100%; }
+.card.slide .answer-wrapper .radio label.full { width: 100%; text-align: right; font-size: 20px !important; padding: 5px 30px; margin-bottom: -1px; }
+/* line 134, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper .radio label.full input { float: left; }
+/* line 138, ../sass/partials/_card.scss */
+.card.slide .answer-wrapper .radio label.full .bmd-radio { float: left; left: 0; margin-top: 2px; }
 /* line 147, ../sass/partials/_card.scss */
+.card.slide.show { position: absolute; bottom: 0; top: initial; transition: all 0.5s; }
+/* line 155, ../sass/partials/_card.scss */
+.card.slide.show .question-wrapper:after { transform: rotate(0); transition: top 0.5s; }
+/* line 164, ../sass/partials/_card.scss */
+.card label { padding-bottom: 20px; position: relative !important; font-size: 25px !important; }
+/* line 170, ../sass/partials/_card.scss */
+.card input { text-align: center; border: 0; width: 100%; }
+/* line 175, ../sass/partials/_card.scss */
 .card input:focus, .card input:active { outline: none; }
-/* line 152, ../sass/partials/_card.scss */
+/* line 180, ../sass/partials/_card.scss */
 .card .input-container { padding: 0; }
-/* line 156, ../sass/partials/_card.scss */
+/* line 184, ../sass/partials/_card.scss */
 .card .radio { font-size: 0px; margin-top: 15px; }
-/* line 160, ../sass/partials/_card.scss */
+/* line 188, ../sass/partials/_card.scss */
 .card .radio label { border: 1px solid #6d6d6d; width: 50%; padding: 10px 30px; font-size: 20px !important; }
-/* line 166, ../sass/partials/_card.scss */
+/* line 194, ../sass/partials/_card.scss */
 .card .radio label .bmd-radio { position: relative; padding: 0px 0px; margin-right: 2px; top: 8px; }
 
 /* line 2, ../sass/partials/_hero.scss */
@@ -232,3 +242,80 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 .page-step2 .card.active p { opacity: 1; visibility: visible; transition: all 0.5s; }
 /* line 79, ../sass/pages/_step2.scss */
 .page-step2 .mini-card { background: #FFFFFF; width: 100%; color: #00968F; }
+
+/* line 3, ../sass/pages/_step3.scss */
+.page-step3 header .logo { display: none; }
+/* line 6, ../sass/pages/_step3.scss */
+.page-step3 header .steps li:nth-of-type(2), .page-step3 header .steps li:nth-of-type(3) { background: #BFD730; }
+/* line 12, ../sass/pages/_step3.scss */
+.page-step3 .desctiption .quote { margin-top: 115px; }
+/* line 16, ../sass/pages/_step3.scss */
+.page-step3 table { border-top: 2px solid; }
+/* line 19, ../sass/pages/_step3.scss */
+.page-step3 table .edit { width: 15px; height: 15px; background-image: url(img/icon-edit2.png); background-repeat: no-repeat; background-size: contain; display: block; margin-top: 10px; }
+/* line 30, ../sass/pages/_step3.scss */
+.page-step3 .table, .page-step3 .table th, .page-step3 .table td { color: #FFFFFF; font-size: 14px; font-weight: 400; }
+/* line 35, ../sass/pages/_step3.scss */
+.page-step3 .table:nth-of-type(2), .page-step3 .table th:nth-of-type(2), .page-step3 .table td:nth-of-type(2) { font-size: 20px; }
+/* line 39, ../sass/pages/_step3.scss */
+.page-step3 .table td, .page-step3 .table th { padding: 10px 15px; }
+/* line 43, ../sass/pages/_step3.scss */
+.page-step3 .table th { border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+/* line 46, ../sass/pages/_step3.scss */
+.page-step3 .table td { border-top: none !important; }
+/* line 50, ../sass/pages/_step3.scss */
+.page-step3 .card { transition: all 0.5s; }
+/* line 52, ../sass/pages/_step3.scss */
+.page-step3 .card p { color: #6d6d6d; font-size: 14px; padding: 10px 0; margin: 0px; letter-spacing: -0.5px; }
+/* line 60, ../sass/pages/_step3.scss */
+.page-step3 .card .input-container { position: absolute; top: calc(50% - 101px); width: calc(100% - 60px); }
+/* line 66, ../sass/pages/_step3.scss */
+.page-step3 .card.active { height: 87vh; transition: all 0.5s; }
+/* line 70, ../sass/pages/_step3.scss */
+.page-step3 .card.active p { opacity: 1; visibility: visible; transition: all 0.5s; }
+/* line 79, ../sass/pages/_step3.scss */
+.page-step3 .pick-date { margin-top: -30px; }
+/* line 82, ../sass/pages/_step3.scss */
+.page-step3 .pick-date .gj-icon { font-size: 0; width: 20px; height: 20px; background-image: url(img/calendar-icon.png); background-position: center; background-repeat: no-repeat; background-size: contain; top: 23px; right: 10px; }
+/* line 94, ../sass/pages/_step3.scss */
+.page-step3 .pick-date label { font-size: 18px !important; padding: 0; }
+/* line 99, ../sass/pages/_step3.scss */
+.page-step3 .pick-date input { text-align: left; font-size: 18px; padding: 25px 0 11px; }
+/* line 107, ../sass/pages/_step3.scss */
+.page-step3 .pick-date .form-group.is-filled label { color: #009688; }
+/* line 111, ../sass/pages/_step3.scss */
+.page-step3 .pick-date .form-group.is-filled .form-control { background-size: 100% 100%,100% 100%; }
+/* line 119, ../sass/pages/_step3.scss */
+.page-step3 .datepicker { width: 317px; border: 0; box-shadow: 0 0 20px rgba(0, 0, 0, 0.22); border-radius: 2px; }
+/* line 125, ../sass/pages/_step3.scss */
+.page-step3 .datepicker .chevron-left, .page-step3 .datepicker .chevron-right { width: 25px; height: 25px; font-size: 0; background-image: url(img/arrow-left.png); background-position: center; background-repeat: no-repeat; background-size: contain; }
+/* line 135, ../sass/pages/_step3.scss */
+.page-step3 .datepicker .chevron-right { background-image: url(img/arrow-right.png); }
+/* line 140, ../sass/pages/_step3.scss */
+.page-step3 .datepicker .gj-picker-md div[role=navigator] { width: 317px; }
+/* line 144, ../sass/pages/_step3.scss */
+.page-step3 .datepicker table { width: 290px; border: 0; margin: 10px; }
+/* line 151, ../sass/pages/_step3.scss */
+.page-step3 .datepicker table tr td.selected.gj-cursor-pointer div { background: #00968F; }
+/* line 155, ../sass/pages/_step3.scss */
+.page-step3 .datepicker table tr td.today div { color: #00968F; }
+/* line 160, ../sass/pages/_step3.scss */
+.page-step3 .small-form { margin-top: -30px; }
+/* line 163, ../sass/pages/_step3.scss */
+.page-step3 .small-form label { font-size: 15px !important; font-weight: 700; color: #000000; padding-bottom: 10px; }
+/* line 170, ../sass/pages/_step3.scss */
+.page-step3 .small-form input { text-align: left; font-size: 15px; padding: 22px 0 6px; }
+/* line 175, ../sass/pages/_step3.scss */
+.page-step3 .small-form input::placeholder { text-align: left; font-size: 15px; color: #9F9595; }
+/* line 182, ../sass/pages/_step3.scss */
+.page-step3 .small-form .half { width: 50%; }
+/* line 186, ../sass/pages/_step3.scss */
+.page-step3 .small-form .form-group { margin: 0; margin-top: -10px; }
+/* line 191, ../sass/pages/_step3.scss */
+.page-step3 .small-form .form-group.is-filled .form-control { background-size: 100% 100%,100% 100%; }
+/* line 198, ../sass/pages/_step3.scss */
+.page-step3 .small-form .is-focused label { color: #00968F; }
+/* line 205, ../sass/pages/_step3.scss */
+.page-step3 .form-check .form-check-input { width: auto; top: 6px; }
+/* line 209, ../sass/pages/_step3.scss */
+.page-step3 .form-check .form-check-label { margin-left: -10px; color: #776E6E; font-weight: 400; }

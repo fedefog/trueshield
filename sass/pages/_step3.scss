@@ -1,0 +1,215 @@
+.page-step3{
+    header{
+        .logo{
+            display: none;
+        }
+        .steps li:nth-of-type(2),  .steps li:nth-of-type(3){
+            background: #BFD730;
+        }
+    }
+
+    .desctiption {
+        .quote {
+            margin-top: 115px;
+        }
+    }
+    table {
+        border-top: 2px solid;
+        
+        .edit{
+            width: 15px;
+            height: 15px;
+            background-image: url(img/icon-edit2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+
+    .table, .table th, .table td {
+        color: $white;
+        font-size: 14px;
+        font-weight: $regular;
+        
+        &:nth-of-type(2){
+            font-size: 20px;
+        }
+    }
+    .table td, .table th {
+        padding: 10px 15px;
+    }
+
+    .table th {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .table td {
+        border-top: none!important;
+    }
+    
+    .card{
+        transition: all 0.5s;
+        p{
+            color: $grey;
+            font-size: 14px;
+            padding: 10px 0;
+            margin: 0px;
+            letter-spacing: -0.5px;
+        }
+        
+        .input-container{
+            position: absolute;
+            top: calc(50% - 101px);
+            width: calc(100% - 60px);
+        }
+        
+        &.active{
+            height: 87vh;
+            transition: all 0.5s;
+            
+            p{
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.5s;
+            }
+        }
+
+    }
+    
+    .pick-date{
+        margin-top: -30px;
+        
+        .gj-icon{
+            font-size: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url(img/calendar-icon.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 23px;
+            right: 10px;
+        }
+        
+        label{
+            font-size: 18px !important;
+            padding: 0;
+        }
+        
+        input{
+            text-align: left;
+            font-size: 18px;
+            padding: 25px 0 11px;
+        }
+        
+        .form-group{
+            &.is-filled{
+                label{
+                    color: #009688;
+                }
+                
+                .form-control{
+                    background-size: 100% 100%,100% 100%;
+                }
+            }
+        }
+    }
+    
+    
+    .datepicker{
+        width: 317px;
+        border: 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.22);
+        border-radius: 2px;
+        
+        .chevron-left{
+            width: 25px;
+            height: 25px;
+            font-size: 0;
+            background-image: url(img/arrow-left.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .chevron-right{
+            @extend .chevron-left;
+            background-image: url(img/arrow-right.png);
+        }
+        
+        .gj-picker-md div[role=navigator]{
+            width: 317px;
+        }
+        
+        table{
+            width: 290px;
+            border: 0;
+            margin: 10px;
+            
+        }
+        
+        table tr td.selected.gj-cursor-pointer div{
+            background: $green;
+        }
+        
+        table tr td.today div{
+            color: $green;
+        }
+    }
+    
+    .small-form{
+        margin-top: -30px;
+        
+        label{
+            font-size: 15px !important;
+            font-weight: $bold;
+            color: #000000;
+            padding-bottom: 10px;
+        }
+        
+        input{
+            text-align: left;
+            font-size: 15px;
+            padding: 22px 0 6px;
+            
+            &::placeholder{
+                text-align: left;
+                font-size: 15px;
+                color: #9F9595;
+            }
+        }
+        
+        .half{
+            width: 50%;
+        }
+        
+        .form-group{
+            margin: 0;
+            margin-top: -10px;
+            
+             &.is-filled{
+                .form-control{
+                    background-size: 100% 100%,100% 100%;
+                }
+            }
+        }
+        
+        .is-focused{
+            label{
+                color: $green;
+            }
+        }
+    }
+
+    .form-check{
+        .form-check-input{
+            width: auto;
+            top: 6px;
+        }
+        .form-check-label{
+            margin-left: -10px;
+            color: #776E6E;
+            font-weight: 400;
+        }
+    }
+}

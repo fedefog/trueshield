@@ -16,16 +16,23 @@
     <!-- Propeller Textfield js --> 
     <script type="text/javascript" src="http://propeller.in/components/textfield/js/textfield.js"></script>
 
-    <!-- Slider js -->
+    <!-- Datepicker --> 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+    <!-- Range Slider js -->
     <script src="http://propeller.in/components/range-slider/js/wNumb.js"></script>
     <script src="http://propeller.in/components/range-slider/js/nouislider.js"></script>
     
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
     <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
-
-
+<script>
+        $('#datepicker').datepicker();
+    </script>
     
+
     <script src="js/functions.js"></script>
 
   </body>

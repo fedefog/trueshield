@@ -1,0 +1,66 @@
+.page-reference{
+    text-align: center;
+    
+    header{
+        .steps{
+            display: none;
+        }
+    }
+    
+    .content{
+        height: 100vh;
+        max-height: calc(100vh - 105px);
+    }
+    
+    .buttons{
+        height: 30%;
+    }
+    
+    .description{
+        height: 70%;
+        display: flex;
+        align-items: center;
+        
+        p{
+            color: $white;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+    }
+    
+    .card{
+
+        .input-container{
+            position: absolute;
+            top: calc(30% - 101px);
+            width: calc(100% - 60px);
+
+            &:before{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+                width: 25px;
+                height: 25px;
+                background-image: url(img/icon-send.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s;
+            }
+            
+            &.is-focused{
+                &:before{
+                     bottom: 10px;
+                     opacity: 1;
+                     visibility: visible;
+                     transition: all 0.3s;
+                }
+            }
+        }
+    }
+    
+}

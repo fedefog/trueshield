@@ -1,6 +1,8 @@
-<?php $page_name = "home" ?>
+<?php $page_name = "reference" ?>
+<?php $prev_page = "index" ?>
+<?php $next_page = "step-1a" ?>
+<?php include('header.php'); ?> 
 
-<?php include('header.php'); ?>
 
 <section>
     <div class="container">
@@ -15,12 +17,20 @@
                     </div>
                     <div class="buttons">
                         <a href="step-1a.php" class="btn">Let's do this</a>
-                        <a href="reference.php" class="lnk">I already have a quote</a>
+                        <a href="#" class="lnk">I already have a quote</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<div class="card c">
+    
+    <div class="input-container form-group">
+        <label for="name" class="bmd-label-floating">Reference #</label>
+        <input type="text" id="name" name="name" class="input-click form-control">
+    </div>
+</div>
 
 <?php include('footer.php'); ?>

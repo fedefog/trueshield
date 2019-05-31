@@ -1,7 +1,7 @@
 
 <?php $page_name = "step3" ?>
 <?php $prev_page = "step-3f" ?>
-<?php $next_page = "step-3g" ?>
+<?php $next_page = "step-4a" ?>
 <?php include('header.php'); ?>
 
 <section>
@@ -72,10 +72,15 @@
                     <input type="text" id="postal" name="postal" class="form-control" placeholder="Enter City">
                 </div>
             </div>
-            <div class="half">
+            <div class="half select-group">
                 <div class="form-group">
                     <label for="province" class="col-form-label">Province</label>
-                    <input type="text" id="province" name="province" class="form-control" placeholder="Enter province">
+                    <select  id="province" name="province"  class="form-control">
+                        <option selected disabled hidden>Enter province</option>
+                        <option>...</option>
+                        <option>...</option>
+                        <option>...</option>
+                      </select>
                 </div>
             </div>
             <div class="form-check">

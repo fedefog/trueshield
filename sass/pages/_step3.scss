@@ -167,10 +167,12 @@
             padding-bottom: 10px;
         }
         
-        input{
+        input, select{
             text-align: left;
             font-size: 15px;
             padding: 22px 0 6px;
+            height: auto !important;
+            background-image: linear-gradient(0deg,#009688 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
             
             &::placeholder{
                 text-align: left;
@@ -186,18 +188,29 @@
         .form-group{
             margin: 0;
             margin-top: -10px;
-            
-             &.is-filled{
-                .form-control{
-                    background-size: 100% 100%,100% 100%;
-                }
-            }
         }
         
         .is-focused{
             label{
                 color: $green;
             }
+        }
+    }
+    
+    .select-group{
+        position: relative;
+        
+        &:after{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-image: url(img/arrow-down.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            bottom: 9px;
+            right: 5px;
         }
     }
 

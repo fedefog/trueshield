@@ -183,6 +183,25 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 /* line 49, ../sass/pages/_home.scss */
 .page-home footer { display: none; }
 
+/* line 1, ../sass/pages/_reference.scss */
+.page-reference { text-align: center; }
+/* line 5, ../sass/pages/_reference.scss */
+.page-reference header .steps { display: none; }
+/* line 10, ../sass/pages/_reference.scss */
+.page-reference .content { height: 100vh; max-height: calc(100vh - 105px); }
+/* line 15, ../sass/pages/_reference.scss */
+.page-reference .buttons { height: 30%; }
+/* line 19, ../sass/pages/_reference.scss */
+.page-reference .description { height: 70%; display: flex; align-items: center; }
+/* line 24, ../sass/pages/_reference.scss */
+.page-reference .description p { color: #FFFFFF; margin-bottom: 20px; font-size: 28px; }
+/* line 33, ../sass/pages/_reference.scss */
+.page-reference .card .input-container { position: absolute; top: calc(30% - 101px); width: calc(100% - 60px); }
+/* line 38, ../sass/pages/_reference.scss */
+.page-reference .card .input-container:before { content: ""; position: absolute; bottom: 0; right: 10px; width: 25px; height: 25px; background-image: url(img/icon-send.png); background-repeat: no-repeat; background-size: contain; background-position: center; z-index: 1; opacity: 0; visibility: hidden; transition: all 0.3s; }
+/* line 56, ../sass/pages/_reference.scss */
+.page-reference .card .input-container.is-focused:before { bottom: 10px; opacity: 1; visibility: visible; transition: all 0.3s; }
+
 /* line 3, ../sass/pages/_step1.scss */
 .page-step1 header .logo { display: none; }
 /* line 9, ../sass/pages/_step1.scss */
@@ -190,11 +209,11 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 /* line 18, ../sass/pages/_step1.scss */
 .page-step1 .card .input-container { position: absolute; top: calc(50% - 101px); width: calc(100% - 60px); }
 /* line 23, ../sass/pages/_step1.scss */
-.page-step1 .card .input-container:before { content: ""; position: absolute; bottom: 0; right: 10px; width: 25px; height: 25px; background-image: url(img/icon-send.png); background-repeat: no-repeat; background-size: contain; background-position: center; z-index: 1; opacity: 0; visibility: hidden; transition: all 0.5s; }
-/* line 43, ../sass/pages/_step1.scss */
+.page-step1 .card .input-container:before { content: ""; position: absolute; bottom: 0; right: 10px; width: 25px; height: 25px; background-image: url(img/icon-send.png); background-repeat: no-repeat; background-size: contain; background-position: center; z-index: 1; opacity: 0; visibility: hidden; transition: all 0.3s; }
+/* line 41, ../sass/pages/_step1.scss */
+.page-step1 .card .input-container.is-focused:before { bottom: 10px; opacity: 1; visibility: visible; transition: all 0.3s; }
+/* line 52, ../sass/pages/_step1.scss */
 .page-step1 .card.active p { opacity: 1; visibility: visible; transition: all 0.5s; }
-/* line 50, ../sass/pages/_step1.scss */
-.page-step1 .card.active .input-container:before { bottom: 10px; opacity: 1; visibility: visible; transition: all 0.5s; }
 /* line 61, ../sass/pages/_step1.scss */
 .page-step1 .field-completed { background: #FFFFFF; color: #6d6d6d; width: 100%; margin-bottom: 2px; }
 /* line 67, ../sass/pages/_step1.scss */
@@ -304,18 +323,154 @@ footer .contact li { display: inline-block; margin: 0 10px; }
 /* line 163, ../sass/pages/_step3.scss */
 .page-step3 .small-form label { font-size: 15px !important; font-weight: 700; color: #000000; padding-bottom: 10px; }
 /* line 170, ../sass/pages/_step3.scss */
-.page-step3 .small-form input { text-align: left; font-size: 15px; padding: 22px 0 6px; }
-/* line 175, ../sass/pages/_step3.scss */
-.page-step3 .small-form input::placeholder { text-align: left; font-size: 15px; color: #9F9595; }
-/* line 182, ../sass/pages/_step3.scss */
+.page-step3 .small-form input, .page-step3 .small-form select { text-align: left; font-size: 15px; padding: 22px 0 6px; height: auto !important; background-image: linear-gradient(0deg, #009688 2px, rgba(0, 150, 136, 0) 0%), linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, rgba(0, 0, 0, 0) 0%); }
+/* line 177, ../sass/pages/_step3.scss */
+.page-step3 .small-form input::placeholder, .page-step3 .small-form select::placeholder { text-align: left; font-size: 15px; color: #9F9595; }
+/* line 184, ../sass/pages/_step3.scss */
 .page-step3 .small-form .half { width: 50%; }
-/* line 186, ../sass/pages/_step3.scss */
+/* line 188, ../sass/pages/_step3.scss */
 .page-step3 .small-form .form-group { margin: 0; margin-top: -10px; }
-/* line 191, ../sass/pages/_step3.scss */
-.page-step3 .small-form .form-group.is-filled .form-control { background-size: 100% 100%,100% 100%; }
-/* line 198, ../sass/pages/_step3.scss */
+/* line 194, ../sass/pages/_step3.scss */
 .page-step3 .small-form .is-focused label { color: #00968F; }
-/* line 205, ../sass/pages/_step3.scss */
+/* line 200, ../sass/pages/_step3.scss */
+.page-step3 .select-group { position: relative; }
+/* line 203, ../sass/pages/_step3.scss */
+.page-step3 .select-group:after { content: ""; position: absolute; width: 10px; height: 10px; background-image: url(img/arrow-down.png); background-position: center; background-repeat: no-repeat; background-size: contain; bottom: 9px; right: 5px; }
+/* line 218, ../sass/pages/_step3.scss */
 .page-step3 .form-check .form-check-input { width: auto; top: 6px; }
-/* line 209, ../sass/pages/_step3.scss */
+/* line 222, ../sass/pages/_step3.scss */
 .page-step3 .form-check .form-check-label { margin-left: -10px; color: #776E6E; font-weight: 400; }
+
+/* line 1, ../sass/pages/_step4.scss */
+.page-step4 > * { position: relative; z-index: 2; }
+
+/* line 5, ../sass/pages/_step4.scss */
+.page-step4 { position: relative; padding-bottom: 100px; }
+/* line 9, ../sass/pages/_step4.scss */
+.page-step4:after { content: ""; position: fixed; width: 100%; height: 55vh; bottom: 0; left: 0; background: #FFFFFF; display: block; z-index: 0; box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.35); }
+/* line 23, ../sass/pages/_step4.scss */
+.page-step4 header .logo { display: none; }
+/* line 26, ../sass/pages/_step4.scss */
+.page-step4 header .steps li:nth-of-type(2), .page-step4 header .steps li:nth-of-type(3), .page-step4 header .steps li:nth-of-type(4) { background: #BFD730; }
+/* line 31, ../sass/pages/_step4.scss */
+.page-step4 .green { color: #00968F; }
+/* line 37, ../sass/pages/_step4.scss */
+.page-step4 .description .disclosure { margin: 0; font-size: 22px; font-weight: 700; padding: 0; }
+/* line 43, ../sass/pages/_step4.scss */
+.page-step4 .description .accept { font-size: 16px; margin: 0; }
+/* line 49, ../sass/pages/_step4.scss */
+.page-step4 .table, .page-step4 .table th, .page-step4 .table td { font-size: 14px; font-weight: 400; border: 0; }
+/* line 54, ../sass/pages/_step4.scss */
+.page-step4 .table tr { height: 38px; }
+/* line 59, ../sass/pages/_step4.scss */
+.page-step4 .table tr td:nth-of-type(2) { text-align: right; }
+/* line 64, ../sass/pages/_step4.scss */
+.page-step4 .table td, .page-step4 .table th { padding: 0; vertical-align: middle; width: 82%; }
+/* line 70, ../sass/pages/_step4.scss */
+.page-step4 .table { margin: 0; }
+/* line 74, ../sass/pages/_step4.scss */
+.page-step4 .table thead th { font-size: 20px; color: #464646; }
+/* line 80, ../sass/pages/_step4.scss */
+.page-step4 .table .edit { width: 15px; height: 15px; background-image: url(img/icon-edit3.png); background-repeat: no-repeat; background-size: contain; display: block; margin-top: 10px; }
+/* line 89, ../sass/pages/_step4.scss */
+.page-step4 .table .edit.hide { opacity: 0; visibility: hidden; }
+/* line 95, ../sass/pages/_step4.scss */
+.page-step4 .table tr td.price, .page-step4 .table tr th.price { font-size: 25px; text-align: left; }
+/* line 100, ../sass/pages/_step4.scss */
+.page-step4 .card { transition: all 0.5s; }
+/* line 102, ../sass/pages/_step4.scss */
+.page-step4 .card p { color: #6d6d6d; font-size: 14px; padding: 10px 0; margin: 0px; letter-spacing: -0.5px; }
+/* line 110, ../sass/pages/_step4.scss */
+.page-step4 .card .input-container { position: absolute; top: calc(50% - 101px); width: calc(100% - 60px); }
+/* line 116, ../sass/pages/_step4.scss */
+.page-step4 .card.active { height: 87vh; transition: all 0.5s; }
+/* line 120, ../sass/pages/_step4.scss */
+.page-step4 .card.active p { opacity: 1; visibility: visible; transition: all 0.5s; }
+/* line 130, ../sass/pages/_step4.scss */
+.page-step4 .small-form { margin-top: -30px; padding-bottom: 20px; }
+/* line 134, ../sass/pages/_step4.scss */
+.page-step4 .small-form label { font-size: 15px !important; font-weight: 700; color: #000000; padding-bottom: 10px; }
+/* line 141, ../sass/pages/_step4.scss */
+.page-step4 .small-form input, .page-step4 .small-form select { text-align: left; font-size: 15px; padding: 22px 0 6px; height: auto !important; background-image: linear-gradient(0deg, #009688 2px, rgba(0, 150, 136, 0) 0%), linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, rgba(0, 0, 0, 0) 0%); }
+/* line 148, ../sass/pages/_step4.scss */
+.page-step4 .small-form input::placeholder, .page-step4 .small-form select::placeholder { text-align: left; font-size: 15px; color: #9F9595; }
+/* line 155, ../sass/pages/_step4.scss */
+.page-step4 .small-form .half { width: 48%; display: inline-block; }
+/* line 160, ../sass/pages/_step4.scss */
+.page-step4 .small-form .form-group { margin: 0; margin-top: -10px; }
+/* line 166, ../sass/pages/_step4.scss */
+.page-step4 .small-form .is-focused label { color: #00968F; }
+/* line 172, ../sass/pages/_step4.scss */
+.page-step4 .select-group { position: relative; }
+/* line 175, ../sass/pages/_step4.scss */
+.page-step4 .select-group:after { content: ""; position: absolute; width: 10px; height: 10px; background-image: url(img/arrow-down.png); background-position: center; background-repeat: no-repeat; background-size: contain; bottom: 9px; right: 5px; }
+/* line 189, ../sass/pages/_step4.scss */
+.page-step4 .ticket-border { width: 100%; height: 30px; margin-bottom: 20px; background-image: url(img/border-ticket.png); background-repeat: repeat-x; background-position: bottom; margin-top: -1px; position: relative; }
+/* line 200, ../sass/pages/_step4.scss */
+.page-step4 .ticket { background: #FFFFFF; color: #464646; padding: 0 20px; position: relative; box-shadow: 0px 0 10px rgba(0, 0, 0, 0.15); }
+/* line 207, ../sass/pages/_step4.scss */
+.page-step4 .ticket .switches { text-align: center; }
+/* line 211, ../sass/pages/_step4.scss */
+.page-step4 .ticket .switches li p { display: inline-block; margin: 0; font-size: 18px; font-weight: 700; vertical-align: -webkit-baseline-middle; padding-top: 14px; }
+/* line 220, ../sass/pages/_step4.scss */
+.page-step4 .ticket .switches li .bmd-form-group { display: inline-block; padding: 0; margin: 0 15px; }
+/* line 228, ../sass/pages/_step4.scss */
+.page-step4 .ticket .total-cost { position: relative; overflow: hidden; color: #00968F; min-height: 142px; position: relative; margin-bottom: 40px; }
+/* line 236, ../sass/pages/_step4.scss */
+.page-step4 .ticket .total-cost .left { font-size: 30px; line-height: 1.1; padding: 0; margin: 0; position: absolute; bottom: 0; letter-spacing: -1px; }
+/* line 246, ../sass/pages/_step4.scss */
+.page-step4 .ticket .total-cost .quote { right: 40px; bottom: 30px; }
+/* line 250, ../sass/pages/_step4.scss */
+.page-step4 .ticket .total-cost .quote span { top: 4px; }
+/* line 253, ../sass/pages/_step4.scss */
+.page-step4 .ticket .total-cost .quote .number { letter-spacing: -8px; }
+/* line 256, ../sass/pages/_step4.scss */
+.page-step4 .ticket .total-cost .quote .number em { position: absolute; letter-spacing: 0; top: -40px; right: -40px; }
+/* line 265, ../sass/pages/_step4.scss */
+.page-step4 .ticket .total-cost .arrow { width: 25px; height: 25px; background-image: url(img/arrow-down-green.png); background-repeat: no-repeat; background-size: contain; position: absolute; display: block; right: 0; bottom: 0; transform: rotate(180deg); transition: all 0.5s; }
+/* line 278, ../sass/pages/_step4.scss */
+.page-step4 .ticket .total-cost .arrow.collapsed { transform: rotate(0); bottom: -9px; transition: all 0.5s; }
+/* line 286, ../sass/pages/_step4.scss */
+.page-step4 .ticket .disclosure-content { padding-bottom: 20px; }
+/* line 289, ../sass/pages/_step4.scss */
+.page-step4 .ticket .disclosure-content .title { font-size: 15px; font-weight: 700; padding-top: 20px; margin-bottom: 20px; }
+/* line 296, ../sass/pages/_step4.scss */
+.page-step4 .ticket .disclosure-content p { font-size: 15px; }
+/* line 299, ../sass/pages/_step4.scss */
+.page-step4 .ticket .disclosure-content p:last-of-type { margin: 0; }
+/* line 306, ../sass/pages/_step4.scss */
+.page-step4 .line { width: calc(100% + 40px); margin: 10px 0; margin-left: -20px; height: 2px; background: #00968F; transition: none; }
+/* line 315, ../sass/pages/_step4.scss */
+.page-step4 .btn-border { display: block; margin: 0 auto; width: 200px; border: 1px solid #A0A0A0; border-radius: 2px; color: #DC4588; font-size: 14px; text-align: center; padding: 12px 0; margin-bottom: 10px; }
+/* line 327, ../sass/pages/_step4.scss */
+.page-step4 .btn-border.pink { border: 3px solid #DC4588; border-radius: 10px; width: 140px; font-size: 20px; }
+/* line 336, ../sass/pages/_step4.scss */
+.page-step4 footer { position: fixed; }
+
+/* line 1, ../sass/pages/_step5.scss */
+.page-step5 > * { position: relative; z-index: 2; }
+
+/* line 5, ../sass/pages/_step5.scss */
+.page-step5 { position: relative; padding-bottom: 100px; }
+/* line 9, ../sass/pages/_step5.scss */
+.page-step5:after { content: ""; position: fixed; width: 100%; height: 55vh; bottom: 0; left: 0; background: #FFFFFF; display: block; z-index: 0; box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.35); }
+/* line 23, ../sass/pages/_step5.scss */
+.page-step5 header .logo { display: none; }
+/* line 26, ../sass/pages/_step5.scss */
+.page-step5 header .steps li:nth-of-type(2), .page-step5 header .steps li:nth-of-type(3), .page-step5 header .steps li:nth-of-type(4), .page-step5 header .steps li:nth-of-type(5) { background: #BFD730; }
+/* line 32, ../sass/pages/_step5.scss */
+.page-step5 .description p.end { text-align: center; font-size: 40px; }
+/* line 38, ../sass/pages/_step5.scss */
+.page-step5 .ticket-border { width: 100%; height: 30px; margin-bottom: 20px; background-image: url(img/border-ticket.png); background-repeat: repeat-x; background-position: bottom; margin-top: -1px; position: relative; }
+/* line 49, ../sass/pages/_step5.scss */
+.page-step5 .ticket { background: #FFFFFF; color: #464646; padding: 0 20px; position: relative; box-shadow: 0px 0 10px rgba(0, 0, 0, 0.15); }
+/* line 56, ../sass/pages/_step5.scss */
+.page-step5 .ticket .reviewing { text-align: center; font-size: 18px; padding-top: 20px; margin: 0; }
+/* line 65, ../sass/pages/_step5.scss */
+.page-step5 .rate { border: 1px solid #BFD730; text-align: center; color: #464646; padding: 10px 0; }
+/* line 71, ../sass/pages/_step5.scss */
+.page-step5 .rate p { font-size: 18px; margin-bottom: 5px; }
+/* line 77, ../sass/pages/_step5.scss */
+.page-step5 .rate .stars li { display: inline-block; }
+/* line 83, ../sass/pages/_step5.scss */
+.page-step5 footer { position: fixed; }

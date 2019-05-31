@@ -11,6 +11,29 @@ footer{
         left: 10px;
     }
     
+    .message{
+        position: absolute;
+        font-size: 14px;
+        background: #DC4588;
+        right: 10px;
+        top: -90px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        
+        &:after{
+            z-index: -2;
+            content: "";
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: #DC4588;
+            bottom: -6px;
+            transform: rotate(45deg);
+            right: 23px;
+        }
+    }
+    
     .next-btn{
         position: absolute;
         top: -34px;
@@ -22,6 +45,10 @@ footer{
         text-align: center;
         padding-top: 8px;
         border: 7px solid $white;
+        
+        &.pink{
+            background: #DC4588;
+        }
     }
     
     .contact{

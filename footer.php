@@ -2,6 +2,7 @@
 
 
     <footer>
+        <div class="message hidden">Hit to see your quote!</div>
        <a href="<?php echo $prev_page; ?>.php" class="back-btn"><img src="img/arrow-left.png" width="26"></a>
         <ul class="contact">
             <li><a href="#"></a><img src="img/comment.png" width="20"></li>

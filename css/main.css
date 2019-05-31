@@ -74,8 +74,14 @@ footer { position: fixed; width: 100%; background: #DDE8ED; bottom: 0; text-alig
 /* line 9, ../sass/partials/_footer.scss */
 footer .back-btn { position: absolute; left: 10px; }
 /* line 14, ../sass/partials/_footer.scss */
+footer .message { position: absolute; font-size: 14px; background: #DC4588; right: 10px; top: -90px; padding: 10px 20px; border-radius: 5px; }
+/* line 23, ../sass/partials/_footer.scss */
+footer .message:after { z-index: -2; content: ""; position: absolute; display: block; width: 20px; height: 20px; background: #DC4588; bottom: -6px; transform: rotate(45deg); right: 23px; }
+/* line 37, ../sass/partials/_footer.scss */
 footer .next-btn { position: absolute; top: -34px; right: 10px; background: #A3A3A3; border-radius: 50px; width: 75px; height: 75px; text-align: center; padding-top: 8px; border: 7px solid #FFFFFF; }
-/* line 28, ../sass/partials/_footer.scss */
+/* line 49, ../sass/partials/_footer.scss */
+footer .next-btn.pink { background: #DC4588; }
+/* line 55, ../sass/partials/_footer.scss */
 footer .contact li { display: inline-block; margin: 0 10px; }
 
 /* line 1, ../sass/partials/_card.scss */

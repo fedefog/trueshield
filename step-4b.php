@@ -23,7 +23,7 @@
                         </div>
                         <div class="form-group">
                             <label for="number" class="col-form-label">Card Number</label>
-                            <input type="password" id="number" name="number" class="form-control" placeholder="aaaa aaaa aaaa aaaa">
+                            <input type="password" id="number" name="number" class="form-control" placeholder="**** **** **** ****">
                         </div>
                         <div class="half select-group">
                             <div class="form-group">
